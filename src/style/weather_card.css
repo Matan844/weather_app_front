@@ -1,0 +1,40 @@
+.weather_card{
+    width: 48%;
+    height: 95%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0%;
+}
+.card{
+    width: 50%;
+    background-color: rgb(38,115,125);
+    color: white;
+    border-radius: 10px;
+    height: 60vh;
+}
+.topcard{
+    height: 15%;
+}
+.deg{
+    height: 35%;
+    font-size: 60px;
+}
+.button{
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media  (max-width: 768px) {
+.card{
+    width: 80vw;
+}
+.weather_card{
+    width: 85vw;
+    height: 60vh;
+    justify-content: center;
+}
+}

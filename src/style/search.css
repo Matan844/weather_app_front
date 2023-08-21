@@ -1,0 +1,98 @@
+.leftside {
+    width: 48%;
+    height: 95%;
+    padding: 20px;
+    padding-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .inputContainer{
+   padding: 5px;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+    background-color: aliceblue;
+    width: 25vw ;
+    height: 7vh ;
+    justify-content: space-between;
+    
+  }
+ .submit-button{
+    height: 5vh;
+ }
+ 
+ .maintext{
+   font-size: 32px;
+   width: 24vw;
+   text-align: left;
+   font-weight: 100;
+   color: rgb(135,135,135);
+   margin-bottom: 10vh;
+ }
+ .cityname{
+   font-size: 15px;
+   height: 10px;
+   color: rgb(135,135,135);
+   margin-left: 3px;
+   padding: 5px;
+
+ }
+ .container{
+   display: flex;
+   /* height: max-content; */
+   flex-direction: column;
+   align-items: flex-start;
+
+
+ }
+ input{
+   border: none;       /* Remove border */
+  padding: 0;          /* Remove padding */
+  margin: 0;           /* Remove margin */
+  background: none;    /* Remove background */
+  font: inherit;       /* Inherit font styles from parent */
+  color: inherit;      /* Inherit text color from parent */
+  outline: none;       /* Remove outline on focus */
+  margin-left: 4px;
+  color: rgb(135, 135, 135);
+ }
+ button{
+   margin-right: 10px;
+   background-color: green;
+   color: aliceblue;
+   border-radius: 5px;
+   border: 0px;
+   padding: 6px;
+   padding-left: 8px;
+   padding-right: 8px;
+ }
+ button:hover{
+   background-color: rgb(66, 104, 9) ;
+   cursor: pointer;
+
+ }
+
+.alert{
+  
+    padding: 10px;
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    border-radius: 4px;
+  
+ }
+ @media  (max-width: 768px) {
+
+.leftside{
+  width: 80%;
+  height: 60vh
+}
+.maintext{
+  width: 72vw;
+}
+.inputContainer{
+  width: 72vw;
+}
+ }
