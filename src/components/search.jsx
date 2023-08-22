@@ -1,11 +1,13 @@
+import { useState } from 'react';
 import '../style/search.css';
 import axios from "axios";
 export default function Search(props) {
   const setCity = props.setCity;
   const city = props.city;
   const setWeatherData = props.setWeatherData;
-
+  const [pressed,setPressed]= useState(false)
   const fetchData = async () => {
+    setPressed(true)
     setCity('')
     if (city !== '') {
     try {
@@ -16,13 +18,16 @@ export default function Search(props) {
       });
       setWeatherData(response.data);
       setCity('')
+      setPressed(false)
     } catch (error) {
       console.error("Error fetching weather data:", error);
       setWeatherData(null);
       alert("city not found");
+      setPressed(false)
     }}
     else{
       alert("Please enter a city name");
+      setPressed(false)
     }
   };
 
@@ -47,7 +52,7 @@ export default function Search(props) {
             onKeyDown={handleKeyPress}
             value={city}
           />
-          <button onClick={fetchData}>Check</button>
+          {pressed ? (<button className='pressed'>Checking</button>):(<button onClick={fetchData}>Check</button>)}
         </div>
       </div>
     </div>
