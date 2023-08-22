@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../style/search.css';
 import axios from "axios";
+
 export default function Search(props) {
   const setCity = props.setCity;
   const city = props.city;

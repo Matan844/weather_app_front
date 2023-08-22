@@ -92,3 +92,8 @@
    width: 72vw;
  }
   }
+  @media  (max-width: 929px) {
+    .inputContainer{
+      width: max-content;
+    }
+  }
